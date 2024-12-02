@@ -7,7 +7,7 @@ tela.width = 1200;  // Define a largura da tela
 tela.height = 500;  // Define a altura da tela
 
 // Variáveis da bolinha
-let velocidade = 10; // Velocidade da bolinha
+let velocidade = 4; // Velocidade da bolinha
 let bolaTamanho = 10;   // Raio da bolinha
 let x = tela.width / 2; // Posição inicial horizontal da bolinha
 let y = tela.height - 30; // Posição inicial vertical da bolinha
@@ -34,8 +34,8 @@ let blocoLinhas = 5;      // Número de linhas de blocos
 let blocoColunas = 10;    // Número de colunas de blocos
 let blocoLargura = 80;   // Largura de cada bloco
 let blocoAltura = 25;     // Altura de cada bloco
-let blocoPadding = 35;    // Espaço entre blocos
-let topoMargem = 5;      // Margem superior para os blocos
+let blocoPadding = 30;    // Espaço entre blocos
+let topoMargem = 10;      // Margem superior para os blocos
 let esquerdaMargem = 30;  // Margem à esquerda para os blocos
 
 
@@ -65,8 +65,8 @@ function teclaSoltaHandler(e) {
 function reposicionarBola() {
     x = tela.width / 2;
     y = tela.height - 30;
-    dx = 4;   // Reinicia a velocidade horizontal
-    dy = -4;  // Reinicia a velocidade vertical
+    dx = velocidade;   // Reinicia a velocidade horizontal
+    dy = -velocidade;  // Reinicia a velocidade vertical
     setaDireita = false;
     setaEsquerda = false;
     barraX = (tela.width - barraLargura) / 2;
