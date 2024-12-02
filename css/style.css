@@ -1,0 +1,35 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contêiner do jogo */
+#jogo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Tela onde o jogo será desenhado */
+#jogoTela {
+    background-color: #000;
+    border: 2px solid #fff;
+    display: block;
+    margin: 20 auto;
+    padding-top: 10px;
+}
+
+/* Painel de pontuação e vidas */
+#pontos, #vidas, #fase, #recorde {
+    font-size: 1.2em;
+    margin: 2px 0;
+    text-align:center;
+}
